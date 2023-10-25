@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:number_note/pages/ListEditPage.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -82,40 +81,29 @@ class _DemoPageState extends State<HomePage> {
                   .map(
                     (e) => Padding(
                       padding: const EdgeInsets.only(bottom: 10),
-                      child: InkWell(
-                        onTap: () {
-                          setState(() {
-                            Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (BuildContext context) => EditPage(),
-                                ));
-                          });
-                        },
-                        child: ListTile(
-                          tileColor: Color.fromRGBO(57, 56, 56, 1),
-                          shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(20)),
-                          leading: Icon(
-                            Icons.fact_check,
+                      child: ListTile(
+                        tileColor: Color.fromRGBO(57, 56, 56, 1),
+                        shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(20)),
+                        leading: Icon(
+                          Icons.fact_check,
+                          color: Colors.white,
+                        ),
+                        trailing: InkWell(
+                          onTap: () {
+                            setState(() {
+                              contactlist.removeWhere(
+                                  (item) => item["Name"] == e["Name"]);
+                            });
+                          },
+                          child: const Icon(
+                            Icons.delete,
                             color: Colors.white,
                           ),
-                          trailing: InkWell(
-                            onTap: () {
-                              setState(() {
-                                contactlist.removeWhere(
-                                    (item) => item["Name"] == e["Name"]);
-                              });
-                            },
-                            child: const Icon(
-                              Icons.delete,
-                              color: Colors.white,
-                            ),
-                          ),
-                          textColor: Colors.white,
-                          title: Text(e["Name"]),
-                          subtitle: Text(e["Number"]),
                         ),
+                        textColor: Colors.white,
+                        title: Text(e["Name"]),
+                        subtitle: Text(e["Number"]),
                       ),
                     ),
                   )
