@@ -1,16 +1,35 @@
-# number_note
 
-A new Flutter project.
+# Contact Number Note App
 
-## Getting Started
 
-This project is a starting point for a Flutter application.
+The Contact Number Note App in Flutter is a versatile and user-friendly mobile application designed to streamline and enhance your contact management experience. Built using the Flutter framework, this app provides a seamless and visually appealing interface for users to easily store and organize contact numbers along with personalized notes. With its intuitive design, users can quickly add and delete contacts.
 
-A few resources to get you started if this is your first Flutter project:
+Here the Some Screen Short of App
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+
+
+
+## Splash Screen
+
+![App Screenshot](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgRIg_sBnqXZtSae0HWsiNXXZ2l6441pMwxf7Ad42fsSb1vlWUWI9cMj8oqurvcxNmcYJnaq_lOGopvk7gu_G6wbKd2m7BVwCu2r62GGlAX7A7S_ZWVQjZFF0h_rQBoNtaIqAop8HgUaFXVJ5WU5fT16YVbPhBY4DaoBpwdKuYsYBrLExaOhe3etij9/s456/contact%201%20page%201.png)
+
+
+## Home Screen 
+![App Screenshot](https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiLYABqhGxPC-RW2nYVaQfZphDwpIMfCQ1I2BqFFOwYP5c9efznOBbJqfi4BTgJIxp5ESiK2tL5eEkeS7cHr59RbiywmQ3PL642NUZlICNG5kLX6af6onZ8UkspBlxT6vbSb5HPQdt3MBYguoRMebYd2syhMcHMDZ4SZ3-Zycyn508HNABpohuZkuIu/s456/contact%20note%20app%20main%201.png)
+## Running Tests
+
+To run tests, run the following command
+
+```bash
+  npm start
+```
+
+
+## Features
+
+- Live previews
+- Fullscreen mode
+- Cross platform
+
